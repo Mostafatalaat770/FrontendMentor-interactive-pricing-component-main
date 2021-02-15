@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="images/favicon-32x32.png"
+		/>
+		<link rel="stylesheet" type="text/css" href="normalize.css" />
+		<link rel="stylesheet" type="text/css" href="main.css" />
+		<script src="main.js"></script>
+		<title>Frontend Mentor | Interactive pricing component</title>
+	</head>
+	<body>
+		<div class="container">
+			<section class="header">
+				<h1>Simple, traffic-based pricing</h1>
+				<p>Sign-up for our 30-day trial. No credit card required.</p>
+			</section>
+			<div class="price-component">
+				<div class="details">
+					<p class="capacity"><span id="pageviews">100k</span> Pageviews</p>
+					<p class="price"><span id="amount">$16.00</span> / month</p>
+				</div>
+				<div class="plans">
+					<input
+						type="range"
+						id="plans-slider"
+						name="plans-slider"
+						min="0"
+						max="100"
+						step="25"
+					/>
+				</div>
+				<div class="billing">
+					<div class="billing-options">
+						Monthly Billing
+						<input type="checkbox" id="billing-switch" />
+						Yearly Billing
+						<p class="desktop">25% discount</p>
+						<p class="mobile">-25%</p>
+					</div>
+				</div>
+				<hr />
+				<div class="features">
+					<ul class="features-list">
+						<li>Unlimited websites</li>
+						<li>100% data ownership</li>
+						<li>Email reports</li>
+					</ul>
+					<button>Start my trial</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
